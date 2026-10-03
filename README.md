@@ -2,7 +2,6 @@
 
 A full-text search engine built entirely from scratch in Python — no Elasticsearch, no Whoosh, no dependencies. Implements the same core algorithms that power Google and Elasticsearch: inverted indexes, BM25 ranking, boolean query evaluation, and Porter-style stemming.
 
-*Based on the original [search-engine-from-scratch](https://github.com/mohosy/search-engine-from-scratch) by mohosy.*
 
 Comes with a built-in web search interface.
 
