@@ -1,0 +1,15 @@
+Cryptography is the practice of securing communication and data through mathematical techniques. It ensures confidentiality, integrity, authentication, and non-repudiation in digital systems. Modern cryptography is essential for everything from online banking to messaging apps to blockchain technology.
+
+Symmetric encryption uses the same key for both encryption and decryption. AES (Advanced Encryption Standard) is the most widely used symmetric cipher, operating on 128-bit blocks with key sizes of 128, 192, or 256 bits. AES in different modes (CBC, CTR, GCM) provides different security properties. ChaCha20 is a modern stream cipher used in TLS and WireGuard VPN.
+
+Asymmetric (public-key) cryptography uses a pair of keys: a public key for encryption and a private key for decryption. RSA is based on the difficulty of factoring large prime numbers. Elliptic curve cryptography (ECC) provides equivalent security with smaller key sizes, making it more efficient for mobile and embedded devices. Diffie-Hellman key exchange allows two parties to establish a shared secret over an insecure channel.
+
+Hash functions map arbitrary-length input to fixed-length output. Cryptographic hash functions like SHA-256 and SHA-3 are one-way (infeasible to reverse), collision-resistant (hard to find two inputs with the same hash), and avalanche-prone (small input changes cause large output changes). Hashes are used for password storage, data integrity verification, and digital signatures.
+
+Digital signatures provide authentication and non-repudiation. The signer creates a signature using their private key, and anyone can verify it using the corresponding public key. Common signature algorithms include RSA-PSS, ECDSA, and EdDSA (Ed25519). Digital signatures are fundamental to code signing, certificates, and blockchain transactions.
+
+TLS (Transport Layer Security) secures internet communication. A TLS handshake negotiates cipher suites, exchanges keys, and authenticates the server (and optionally the client) using X.509 certificates. The certificate authority (CA) system provides trust through a hierarchy of signed certificates. Let's Encrypt has democratized TLS by providing free, automated certificates.
+
+Password security requires proper hashing with salt and a slow algorithm. Bcrypt, scrypt, and Argon2 are designed specifically for password hashing — they are intentionally slow and memory-hard to resist brute-force and GPU-based attacks. Storing passwords in plaintext or using fast hashes like MD5 or SHA-256 is a serious security vulnerability.
+
+Blockchain technology uses cryptographic primitives to create an immutable, distributed ledger. Each block contains a hash of the previous block, creating a chain. Proof-of-work consensus requires miners to find a hash below a target difficulty. Merkle trees efficiently verify transaction inclusion. Zero-knowledge proofs allow verification without revealing the underlying data.

@@ -1,0 +1,15 @@
+A compiler translates source code written in a high-level programming language into lower-level code that can be executed by a computer. The compilation process involves several phases, each transforming the code into a different representation. Understanding compilers provides deep insight into how programming languages work.
+
+Lexical analysis (scanning) is the first phase. The lexer reads the source code character by character and groups characters into tokens — the smallest meaningful units of the language. Tokens include keywords (if, while, return), identifiers (variable names), literals (numbers, strings), and operators (+, -, ==). The lexer typically uses finite automata or regular expressions to recognize token patterns.
+
+Parsing (syntax analysis) takes the token stream and builds an Abstract Syntax Tree (AST) that represents the grammatical structure of the program. Recursive descent parsers use mutually recursive functions to match grammar rules. Parser generators like YACC and ANTLR automate parser construction from grammar specifications. The parser detects syntax errors and reports them to the programmer.
+
+Semantic analysis checks the AST for meaning — type checking, scope resolution, and symbol table management. The type checker ensures operands have compatible types and function calls match their signatures. Scope analysis determines which declaration each identifier refers to. The symbol table maps identifiers to their types, memory locations, and other attributes.
+
+Intermediate representation (IR) is a language-independent form that sits between the source and target languages. Three-address code, static single assignment (SSA), and control flow graphs are common IR forms. LLVM's IR has become an industry standard, enabling front-ends for many languages to share the same optimizations and code generation backends.
+
+Optimization transforms the program to improve performance without changing its behavior. Common optimizations include constant folding (computing constant expressions at compile time), dead code elimination (removing unreachable code), loop unrolling (reducing loop overhead), and inlining (replacing function calls with function bodies). Register allocation maps variables to CPU registers for faster access.
+
+Code generation translates the optimized IR into target machine code. The code generator selects appropriate machine instructions, allocates registers, and schedules instructions to exploit CPU pipeline characteristics. Just-in-time (JIT) compilers like those in the JVM and V8 compile code at runtime, using profiling data to optimize hot paths.
+
+Garbage collection automatically reclaims memory that is no longer reachable by the program. Reference counting tracks how many references point to each object. Tracing collectors (mark-and-sweep, copying, generational) periodically scan the object graph to find unreachable objects. Modern garbage collectors like G1 and ZGC achieve very low pause times even with large heaps.

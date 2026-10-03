@@ -1,0 +1,15 @@
+A database is an organized collection of structured information stored electronically. Database management systems (DBMS) provide the software interface for creating, reading, updating, and deleting data. Databases are the foundation of nearly every modern application, from social media platforms to banking systems.
+
+Relational databases organize data into tables with rows and columns. Each table represents an entity, and relationships between entities are expressed through foreign keys. SQL (Structured Query Language) is the standard language for querying relational databases. Popular relational databases include PostgreSQL, MySQL, SQLite, Oracle, and Microsoft SQL Server.
+
+Database indexing dramatically improves query performance. A B-tree index allows O(log n) lookups instead of O(n) full table scans. Hash indexes provide O(1) lookups for equality queries. Composite indexes cover multiple columns. Understanding when and how to create indexes is crucial for database performance tuning. However, indexes add overhead to write operations and consume storage space.
+
+Transactions ensure data integrity through the ACID properties: Atomicity (all or nothing), Consistency (valid state transitions), Isolation (concurrent transactions don't interfere), and Durability (committed data survives crashes). Transaction isolation levels (read uncommitted, read committed, repeatable read, serializable) balance consistency against concurrency performance.
+
+Query optimization is the process of selecting the most efficient execution plan for a SQL query. The query optimizer considers available indexes, table statistics, join ordering, and access methods. Understanding execution plans (EXPLAIN in PostgreSQL) helps developers write efficient queries. Common optimizations include using indexes, avoiding SELECT *, limiting result sets, and properly joining tables.
+
+NoSQL databases provide alternatives to the relational model. Document stores like MongoDB store flexible JSON-like documents. Key-value stores like Redis and DynamoDB offer simple but fast lookups. Column-family stores like Cassandra handle wide-column data efficiently. Graph databases like Neo4j excel at relationship-heavy queries. Each model trades off consistency, availability, and partition tolerance differently (the CAP theorem).
+
+Database scaling handles growing data and traffic. Vertical scaling adds more power to a single server. Horizontal scaling distributes data across multiple servers through sharding (partitioning data) and replication (copying data). Read replicas offload read queries from the primary database. Connection pooling reduces the overhead of establishing database connections.
+
+Data warehousing and analytics involve storing and analyzing large volumes of historical data. OLAP (Online Analytical Processing) systems are optimized for complex aggregation queries, while OLTP (Online Transaction Processing) systems handle high volumes of simple transactions. Modern data warehouses like Snowflake and BigQuery separate storage and compute for elastic scaling.

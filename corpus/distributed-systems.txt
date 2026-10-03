@@ -1,0 +1,15 @@
+A distributed system is a collection of independent computers that appears to its users as a single coherent system. Distributed systems power the modern internet — from cloud computing platforms to social media applications serving billions of users.
+
+The CAP theorem states that a distributed system can provide at most two of three guarantees: Consistency (every read receives the most recent write), Availability (every request receives a response), and Partition tolerance (the system continues operating despite network partitions). Since network partitions are inevitable in practice, systems must choose between consistency and availability during failures.
+
+Consensus protocols allow distributed nodes to agree on a value even when some nodes fail. Paxos was the first proven consensus algorithm but is notoriously difficult to implement. Raft was designed as a more understandable alternative and is used in systems like etcd and CockroachDB. Byzantine fault tolerance (BFT) handles nodes that behave maliciously, as required in blockchain systems.
+
+Replication copies data across multiple nodes for fault tolerance and performance. Single-leader replication routes all writes through one node, providing strong consistency but creating a bottleneck. Multi-leader replication allows writes at multiple nodes but introduces conflict resolution complexity. Leaderless replication (used by Dynamo-style databases like Cassandra) uses quorum reads and writes.
+
+Sharding (partitioning) distributes data across nodes to handle more data than a single machine can store. Range-based sharding assigns contiguous key ranges to different nodes. Hash-based sharding distributes keys using a hash function. Consistent hashing minimizes data movement when nodes join or leave the cluster, making it ideal for dynamic distributed systems.
+
+Message queues decouple producers and consumers, enabling asynchronous communication between services. Apache Kafka provides a distributed, durable, high-throughput message log. RabbitMQ implements the AMQP protocol for traditional message queuing. Message queues enable event-driven architectures, data pipelines, and reliable communication between microservices.
+
+Distributed storage systems provide reliable data storage across clusters. Google File System (GFS) and its open-source successor HDFS store large files across commodity hardware with replication for fault tolerance. Object storage systems like Amazon S3 provide simple put/get interfaces for storing arbitrary data. Distributed databases like Spanner provide global consistency with GPS-synchronized clocks.
+
+Microservices architecture decomposes applications into small, independently deployable services. Each service owns its data and communicates through APIs or events. Benefits include independent scaling, technology diversity, and faster deployment. Challenges include distributed transactions, service discovery, observability, and increased operational complexity. Service meshes like Istio help manage service-to-service communication.

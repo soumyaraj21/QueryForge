@@ -1,0 +1,11 @@
+Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented, and functional programming.
+
+Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde and Informatica (CWI) in the Netherlands as a successor to the ABC programming language, which was inspired by SETL. Its implementation began in December 1989. Van Rossum shouldered sole responsibility for the project, as the lead developer, until July 2018.
+
+Python consistently ranks as one of the most popular programming languages. It is used extensively in web development, data science, machine learning, artificial intelligence, scientific computing, and automation. Major organizations like Google, NASA, Netflix, and Instagram use Python in their technology stacks.
+
+The language provides constructs that enable clear programming on both small and large scales. Python features a comprehensive standard library that provides tools suited to many tasks. The Python Package Index (PyPI) hosts thousands of third-party modules for Python.
+
+Key features of Python include dynamic typing, automatic memory management, and support for multiple programming paradigms. The language supports modules and packages, which encourages program modularity and code reuse. Python interpreters are available for many operating systems, making it a cross-platform language.
+
+Python 3 was released in 2008 and introduced many changes that were not backwards compatible with Python 2. Python 2 reached its end of life in January 2020. Modern Python development focuses exclusively on Python 3, with the latest stable release being frequently updated with new features and performance improvements.

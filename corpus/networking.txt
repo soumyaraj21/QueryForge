@@ -1,0 +1,15 @@
+Computer networking is the practice of connecting computers and devices to share resources and communicate. Networks range from small local area networks (LANs) connecting devices in a building to the global internet connecting billions of devices worldwide.
+
+The OSI model describes networking in seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application. The TCP/IP model simplifies this into four layers: Network Interface, Internet, Transport, and Application. Each layer provides services to the layer above it and abstracts the complexity below.
+
+The Internet Protocol (IP) routes packets across networks. IPv4 uses 32-bit addresses (like 192.168.1.1), providing about 4.3 billion unique addresses — not enough for the modern internet. IPv6 uses 128-bit addresses (like 2001:db8::1), providing virtually unlimited addresses. Routers forward packets between networks based on routing tables and protocols like BGP and OSPF.
+
+The Transmission Control Protocol (TCP) provides reliable, ordered, and error-checked delivery of data between applications. TCP uses a three-way handshake to establish connections, sequence numbers to order packets, acknowledgments to confirm receipt, and retransmission to handle lost packets. Flow control and congestion control prevent network overload.
+
+The User Datagram Protocol (UDP) provides a simpler, connectionless transport. UDP does not guarantee delivery, ordering, or error checking, but offers lower latency than TCP. UDP is used for real-time applications like video streaming, online gaming, DNS queries, and VoIP where speed matters more than perfect reliability.
+
+DNS (Domain Name System) translates human-readable domain names (like google.com) into IP addresses. DNS uses a hierarchical structure with root servers, top-level domain servers, and authoritative name servers. DNS caching at multiple levels reduces lookup time. DNS records include A (IPv4 address), AAAA (IPv6 address), CNAME (alias), MX (mail server), and TXT (text data).
+
+HTTP (Hypertext Transfer Protocol) is the foundation of web communication. HTTP/1.1 uses text-based request-response pairs over persistent TCP connections. HTTP/2 introduces multiplexing (multiple streams over one connection), header compression, and server push. HTTP/3 replaces TCP with QUIC (built on UDP) for reduced latency. TLS encryption secures HTTP traffic as HTTPS.
+
+Network security protects against unauthorized access and attacks. Firewalls filter traffic based on rules. VPNs create encrypted tunnels over public networks. Intrusion detection systems (IDS) monitor for suspicious activity. Common attacks include DDoS (overwhelming with traffic), man-in-the-middle (intercepting communication), and packet sniffing (capturing unencrypted data).

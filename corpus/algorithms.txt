@@ -1,0 +1,15 @@
+An algorithm is a finite sequence of well-defined instructions for solving a class of problems or performing a computation. Algorithm design and analysis is a cornerstone of computer science, determining how efficiently problems can be solved.
+
+Sorting algorithms arrange elements in a specific order. Comparison-based sorts include quicksort (average O(n log n), widely used in practice), mergesort (guaranteed O(n log n), stable), and heapsort (O(n log n), in-place). Non-comparison sorts like counting sort, radix sort, and bucket sort can achieve O(n) time for specific data distributions. The theoretical lower bound for comparison-based sorting is O(n log n).
+
+Searching algorithms find elements in data structures. Binary search operates on sorted arrays in O(log n) time by repeatedly halving the search space. Hash-based search achieves O(1) average time. Tree-based search structures like balanced BSTs provide O(log n) guaranteed time. For text, specialized algorithms like Knuth-Morris-Pratt (KMP) and Rabin-Karp enable efficient string matching.
+
+Graph algorithms solve problems on networks and relationships. Breadth-first search (BFS) explores nodes level by level and finds shortest paths in unweighted graphs. Depth-first search (DFS) explores as far as possible along each branch and is useful for topological sorting and cycle detection. Dijkstra's algorithm finds shortest paths in weighted graphs with non-negative edges. Bellman-Ford handles negative edge weights.
+
+Dynamic programming solves complex problems by breaking them into overlapping subproblems and storing their solutions. Classic examples include the Fibonacci sequence, longest common subsequence, knapsack problem, and edit distance. The key insight is that solving each subproblem only once (memoization or tabulation) avoids exponential redundant computation.
+
+Greedy algorithms make locally optimal choices at each step, hoping to find a global optimum. They work for problems with the greedy choice property and optimal substructure. Examples include Huffman coding for data compression, Kruskal's and Prim's algorithms for minimum spanning trees, and activity selection problems.
+
+Divide and conquer breaks a problem into smaller subproblems, solves them recursively, and combines the results. Mergesort, quicksort, binary search, and the fast Fourier transform (FFT) are classic divide and conquer algorithms. The Master theorem provides a framework for analyzing the time complexity of divide and conquer recurrences.
+
+Computational complexity theory classifies problems by their inherent difficulty. P contains problems solvable in polynomial time. NP contains problems whose solutions can be verified in polynomial time. The P vs NP question — whether every problem whose solution can be quickly verified can also be quickly solved — remains one of the most important open problems in mathematics and computer science.

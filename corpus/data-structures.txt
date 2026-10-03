@@ -1,0 +1,15 @@
+Data structures are specialized formats for organizing, processing, retrieving, and storing data. They are fundamental to computer science and form the backbone of efficient algorithms. Choosing the right data structure can make the difference between an algorithm that runs in milliseconds versus one that takes hours.
+
+Arrays are the simplest and most widely used data structure. An array stores elements in contiguous memory locations, allowing O(1) random access by index. However, inserting or deleting elements in the middle of an array requires O(n) time because elements must be shifted. Dynamic arrays (like Python lists or Java ArrayLists) automatically resize when they run out of space.
+
+Linked lists store elements in nodes, where each node contains data and a pointer to the next node. Unlike arrays, linked lists allow O(1) insertion and deletion at any position (given a reference to the node), but accessing the kth element requires O(k) time because you must traverse from the head. Doubly linked lists add a pointer to the previous node, enabling traversal in both directions.
+
+Hash tables (also called hash maps or dictionaries) provide average O(1) lookup, insertion, and deletion by mapping keys to array indices using a hash function. Collisions are handled through techniques like chaining (linked lists at each bucket) or open addressing (probing for the next empty slot). Hash tables power everything from database indexes to caches to symbol tables in compilers.
+
+Trees are hierarchical data structures. Binary search trees (BSTs) maintain sorted order, allowing O(log n) search, insert, and delete operations when balanced. Self-balancing variants like AVL trees and red-black trees guarantee logarithmic height. B-trees and B+ trees are optimized for disk-based storage and are used in databases and file systems.
+
+Graphs represent relationships between entities using vertices (nodes) and edges (connections). They can be directed or undirected, weighted or unweighted. Graph algorithms like BFS, DFS, Dijkstra's shortest path, and minimum spanning trees solve problems in networking, social networks, mapping, and scheduling.
+
+Heaps are tree-based structures that satisfy the heap property: in a min-heap, every parent is smaller than its children. Heaps provide O(1) access to the minimum (or maximum) element and O(log n) insertion and extraction. They are the foundation of priority queues and heap sort.
+
+Stacks follow Last-In-First-Out (LIFO) ordering and support push and pop operations in O(1) time. They are used in function call management, expression evaluation, backtracking algorithms, and undo mechanisms. Queues follow First-In-First-Out (FIFO) ordering and are used in breadth-first search, task scheduling, and buffering.

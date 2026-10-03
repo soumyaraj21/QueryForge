@@ -1,0 +1,11 @@
+Machine learning is a subset of artificial intelligence that focuses on building systems that learn from data. Instead of being explicitly programmed to perform a task, machine learning algorithms use statistical techniques to identify patterns in data and make predictions or decisions.
+
+There are three main types of machine learning: supervised learning, unsupervised learning, and reinforcement learning. In supervised learning, the algorithm is trained on labeled data — input-output pairs where the correct answer is known. Common supervised learning tasks include classification and regression. In unsupervised learning, the algorithm finds patterns in unlabeled data, such as clustering similar items together. Reinforcement learning involves an agent learning to make decisions by receiving rewards or penalties for its actions.
+
+Popular machine learning algorithms include linear regression, logistic regression, decision trees, random forests, support vector machines (SVMs), k-nearest neighbors (KNN), and neural networks. Each algorithm has strengths suited to different types of problems and data.
+
+Deep learning is a specialized branch of machine learning that uses neural networks with many layers (hence "deep"). Deep learning has achieved breakthrough results in computer vision, natural language processing, speech recognition, and game playing. Frameworks like TensorFlow, PyTorch, and JAX make it accessible to build and train deep neural networks.
+
+The machine learning pipeline typically involves data collection, data preprocessing, feature engineering, model selection, training, evaluation, and deployment. Techniques like cross-validation, regularization, and hyperparameter tuning help ensure models generalize well to unseen data rather than overfitting to the training set.
+
+Machine learning is transforming industries from healthcare (disease diagnosis, drug discovery) to finance (fraud detection, algorithmic trading) to transportation (self-driving cars) to entertainment (recommendation systems). The field continues to advance rapidly with research into areas like few-shot learning, transfer learning, and large language models.

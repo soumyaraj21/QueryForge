@@ -1,0 +1,15 @@
+An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs. The operating system acts as an intermediary between users and the computer hardware. Without an operating system, a user cannot run an application program on their computer.
+
+Process management is a core function of operating systems. A process is a program in execution, and the OS must allocate CPU time to multiple processes. Scheduling algorithms like round-robin, priority scheduling, and completely fair scheduling (CFS) determine which process runs next. Context switching saves the state of one process and loads another, enabling multitasking.
+
+Memory management involves allocating and deallocating memory for processes. Virtual memory allows programs to use more memory than physically available by swapping pages between RAM and disk. The memory management unit (MMU) translates virtual addresses to physical addresses. Techniques like paging and segmentation organize memory into manageable units.
+
+File systems organize data on storage devices into files and directories. Common file systems include ext4 (Linux), NTFS (Windows), and APFS (macOS). The file system handles reading, writing, permissions, and metadata. Journaling file systems maintain a log of changes to recover from crashes without data corruption.
+
+Concurrency and synchronization are essential when multiple threads or processes access shared resources. Race conditions occur when the outcome depends on the timing of operations. Synchronization primitives like mutexes, semaphores, and condition variables prevent data corruption. Deadlocks occur when processes wait indefinitely for resources held by each other.
+
+The kernel is the core of the operating system. Monolithic kernels (like Linux) include all OS services in a single large binary. Microkernels (like MINIX) keep the kernel minimal and run services as user-space processes. Hybrid kernels (like Windows NT and macOS XNU) combine elements of both approaches.
+
+Device drivers are software modules that allow the operating system to communicate with hardware devices. The driver acts as a translator between the hardware and the OS, abstracting hardware-specific details behind a standard interface. Modern operating systems support plug-and-play, automatically detecting and loading drivers for new hardware.
+
+Inter-process communication (IPC) mechanisms allow processes to exchange data. Pipes, message queues, shared memory, and sockets are common IPC methods. Sockets are particularly important as they enable network communication between processes on different machines, forming the foundation of distributed systems.
